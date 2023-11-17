@@ -1,0 +1,38 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/nextauth/node_modules
+/nextauth/.pnp
+/nextauth/.pnp.js
+/nextauth/.yarn/install-state.gz
+
+# testing
+/nextauth/coverage
+
+# next.js
+/nextauth/.next/
+/nextauth/out/
+
+# production
+/nextauth/build
+
+# misc
+/nextauth/.DS_Store
+/nextauth/*.pem
+
+# debug
+/nextauth/npm-debug.log*
+/nextauth/yarn-debug.log*
+/nextauth/yarn-error.log*
+
+# local env files
+/nextauth/.env*.local
+
+# vercel
+/nextauth/.vercel
+
+# typescript
+/nextauth/*.tsbuildinfo
+/nextauth/next-env.d.ts
+
+/node-server/node_modules

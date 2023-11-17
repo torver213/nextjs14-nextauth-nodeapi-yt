@@ -1,0 +1,1 @@
+export { default as postRoutes } from './post.mjs'
