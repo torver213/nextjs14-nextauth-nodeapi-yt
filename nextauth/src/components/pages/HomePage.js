@@ -18,8 +18,7 @@ const HomePage = () => {
 
                 <Image src="/logo-sm.png" alt="Logo" width={270} height={298} />
 
-
-            <Typography variant='h2' sx={{fontFamily: "Play Fair", color: theme => theme.palette.common.white, p: 4}}>
+            <Typography variant='h2' sx={{fontFamily: "Play Fair", color: theme => theme.palette.common.white, p: 4, fontSize: {lg: "3.75rem", md: 20, sm: 20, xs: 20}}}>
                 NextJs 14 Authentication & Role Based Authorisation Using NextAuth with Mongodb Adapter
             </Typography>
             </Box>

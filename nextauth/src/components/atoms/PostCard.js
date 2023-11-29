@@ -23,7 +23,7 @@ const PostCard = ({post}) => {
                 <Stack sx={{my: 1}} direction="row" spacing={2} justifyContent="space-between">
                     <Box>
                         <Typography variant="body2">Posted on: </Typography>
-                        <Typography suppressHydrationWrning={true} variant="body2">{formatDate(post.createdAt)} </Typography>
+                        <Typography suppressHydrationWarning={true} variant="body2">{formatDate(post.createdAt)} </Typography>
                     </Box>
                     <Box >
                         <Link href={`/blog${post.slug}`} passHref>

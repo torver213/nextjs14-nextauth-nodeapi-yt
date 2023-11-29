@@ -33,7 +33,7 @@ const adminNavItems = [
   { title: "Dashboard", url: "/dashboard" },
   { title: "Profile", url: "/profile" },
   { title: "Create Post", url: "/create-post" },
-  { title: "Logout", url: "#" },
+  { title: "Logout", url: "/api/auth/signout" },
 ];
 
 const userPages = [
@@ -46,7 +46,7 @@ const userPages = [
 const userMenuItems = [
   { title: "Dashboard", url: "/dashboard" },
   { title: "Profile", url: "/profile" },
-  { title: "Logout", url: "#" },
+  { title: "Logout", url: "/api/auth/signout" },
 ];
 
 function SiteNavbar({ session }) {
@@ -85,7 +85,7 @@ function SiteNavbar({ session }) {
     ? userMenuItems
     : [];
   return (
-    <AppBar position="static">
+    <AppBar position="fixed">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
@@ -214,7 +214,7 @@ function SiteNavbar({ session }) {
                 onClose={handleCloseUserMenu}
               >
                 {settings.map((setting) => (
-                  <MenuItem key={setting.title} onClick={() => setting.title === "Logout" ? signOut() : handleCloseUserMenu()}>
+                  <MenuItem key={setting.title} onClick={() => handleCloseUserMenu()}>
                     <Button size="small" LinkComponent={Link} passHref href={setting.url} >{setting.title}</Button>
                   </MenuItem>
                 ))}

@@ -9,7 +9,7 @@ const createNewPost = async(body) => {
         const result = await PostModel.create({...body, slug})
         return {isError: false, data: result, message: "success" }
     } catch (error) {
-        return {isError: false, data: null, message: error.message }
+        return {isError: true, data: null, message: error.message }
         
     }
 }
@@ -20,7 +20,7 @@ const getAllPosts = async() =>{
         const data = result?.map(post => ({...post, id: post._id?.toString(), user: {...post.user, id: post?.user?._id.toString()} }))
         return {isError: false, data, message: "success" }
     } catch (error) {
-        return {isError: false, data: null, message: error.message }
+        return {isError: true, data: null, message: error.message }
     }
 }
 

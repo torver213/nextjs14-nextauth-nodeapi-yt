@@ -13,7 +13,7 @@ const UserDashboard = ({session}) => {
   return (
     <Box sx={{backgroundColor: theme => theme.palette.grey[300], height: "100vh"}}>
 <Container maxWidth="xl">
-            <Box sx={{pt: 2}}>
+            <Box sx={{pt: 10}}>
                     <Typography>
                         User Dashboard
                     </Typography>

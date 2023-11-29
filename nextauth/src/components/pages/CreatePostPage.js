@@ -40,12 +40,12 @@ const CreatePostPage = ({session}) => {
 
 
   return (
-    <Box sx={{backgroundColor: theme => theme.palette.grey[300], height: "100vh"}}>
+    <Box sx={{backgroundColor: theme => theme.palette.grey[300], minHeight: "100vh", pb: 4}}>
             <Container maxWidth="xl">
-                <Box sx={{mx: 2}}>
-                    <Typography variant='h3' sx={{textAlign: "center"}}>Create New Post</Typography>
+                <Box sx={{mx: 2, pt: 8, mb: 4}}>
+                    <Typography variant='h3' sx={{textAlign: "center", fontSize: {lg: "3.75rem", md: 20, sm: 20, xs: 20}, py: 2 }}>Create New Post</Typography>
                     <Grid container spacing={2}>
-                        <Grid item lg={8} sx={{margin: "0 auto"}}>
+                        <Grid item lg={8} md={12} sm={12} xs={12} sx={{margin: "0 auto"}}>
                             <Paper sx={{p: 3}}>
                                 <Box>
                                     <Box sx={{my: 3}}>

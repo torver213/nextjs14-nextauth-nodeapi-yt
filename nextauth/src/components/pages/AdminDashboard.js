@@ -15,9 +15,9 @@ const items = [
 
 const AdminDashboard = ({session}) => {
   return (
-    <Box sx={{backgroundColor: theme => theme.palette.grey[300], height: "100vh"}}>
+    <Box sx={{backgroundColor: theme => theme.palette.grey[300], minHeight: "100vh"}}>
         <Container maxWidth="xl">
-            <Box sx={{pt: 2}}>
+            <Box sx={{pt: 10}}>
                     <Typography>
                         Admin Dashboard
                     </Typography>
@@ -28,7 +28,7 @@ const AdminDashboard = ({session}) => {
                     <Grid container spacing={2}>
                         {
                             items.map(item => (
-                                <Grid item key={item.title} lg={3}>
+                                <Grid item key={item.title} lg={3} md={6} sm={12} xs={12}>
                                     <Paper elevation={4} sx={{p: 3, m: 2}}>
                                         <Stack direction="column">
                                             <Typography variant='h5'>{item.title}</Typography>
